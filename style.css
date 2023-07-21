@@ -1,16 +1,18 @@
+/* Reset CSS e Estilos Globais */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Definição do tamanho de fonte padrão */
 :root {
-  font-size: 62.5%;
+  font-size: 62.5%; /* Definindo o tamanho da fonte em 10px para facilitar cálculos */
 }
 
+/* Estilos globais do corpo da página */
 body {
   display: grid;
   justify-content: center;
@@ -19,6 +21,7 @@ body {
   padding: 7.3rem 12.2rem 15.2rem 10rem;
 }
 
+/* Estilos do cabeçalho */
 header h1 {
   font-size: 5.6rem;
   font-weight: 900;
@@ -33,23 +36,22 @@ header p {
   line-height: 4rem;
 }
 
+/* Estilos da seção principal (main) */
 main {
   margin-top: 6.3rem;
 
+  /* Layout da seção principal em grid com 3 colunas */
   display: grid;
   grid-template-columns: repeat(3, 36.8rem);
-
   gap: 4.8rem 6rem;
 }
 
+/* Estilos dos cards */
 .card {
   background-color: #202024;
-
   border: 2px solid #323238;
   border-radius: 8px;
-
   padding-left: 0 3.2rem 3.2rem;
-
   overflow: hidden;
 }
 
